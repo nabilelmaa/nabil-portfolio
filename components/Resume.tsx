@@ -6,7 +6,7 @@ function Resume() {
       id="resume"
       className="flex flex-col items-center justify-center py-20"
     >
-   <h1 className="lg:text-4xl md:text-4xl sm:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      <h1 className="text-2xl lg:text-4xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Resume
       </h1>
       <div>

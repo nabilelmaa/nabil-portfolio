@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo-container {
+  width: 90px;
+  height: 90px;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    width: 55px;
+    height: 55px;
+  }
+}

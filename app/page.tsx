@@ -14,7 +14,6 @@ export default function Home() {
         <Skills />
         <Projects />
         <Resume />
-        {/* <GSAP /> */}
       </div>
     </main>
   );

@@ -1,6 +1,17 @@
-import React from "react";
+"use client";
+
+import { useRouter, usePathname } from "next/navigation";
 
 function Resume() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const isResumePag = pathname === "/resume";
+
+  const handleDownloadClick = () => {
+    router.push("/resume");
+  };
+
   return (
     <section
       id="resume"
@@ -10,9 +21,9 @@ function Resume() {
         My Resume
       </h1>
       <div>
-        <a
+        <button
           className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 bg-white"
-          href="#"
+          onClick={handleDownloadClick}
         >
           <span className="absolute -start-full transition-all group-hover:start-4">
             <svg
@@ -32,10 +43,9 @@ function Resume() {
           </span>
 
           <span className="text-sm font-medium transition-all group-hover:ms-4">
-            {" "}
-            Download{" "}
+            Download
           </span>
-        </a>
+        </button>
       </div>
     </section>
   );

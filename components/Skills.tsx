@@ -23,6 +23,7 @@ function Skills() {
     "/spring.png",
     "/python.png",
     "/c.png",
+    "/figma1.png"
   ];
 
   useEffect(() => {

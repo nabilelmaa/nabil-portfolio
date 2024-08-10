@@ -29,7 +29,7 @@ export const FindMe = () => {
   return (
     <section id="find-me" className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="mt-4 text-2xl lg:text-4xl md:text-4xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-8">
+        <h2 className="mt-4 text-3xl lg:text-4xl md:text-4xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-8">
           Find Me
         </h2>
         <div className="flex flex-wrap justify-center gap-8">

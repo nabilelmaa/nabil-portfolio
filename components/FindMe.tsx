@@ -40,7 +40,7 @@ export const FindMe = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="w-12 h-12 lg:w-20 lg:h-20 relative group mt-12">
+              <div className="w-12 h-12 lg:w-20 lg:h-20 relative group mt-12 custom-cursor-pointer">
                 <Image
                   src={link.icon}
                   alt={link.alt}

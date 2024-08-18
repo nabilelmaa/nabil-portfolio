@@ -79,3 +79,11 @@
     height: 55px;
   }
 }
+
+.custom-cursor-auto {
+  cursor: url("/default-cursor.svg"), auto;
+}
+
+.custom-cursor-pointer {
+  cursor: url("/hand-pointer.svg"), pointer;
+}

@@ -55,7 +55,7 @@ function Skills() {
           {logos.map((src, index) => (
             <div
               key={index}
-              className={`logo-container logo-${index} cursor-pointer flex items-center justify-center hover:scale-110`}
+              className={`custom-cursor-pointer logo-container logo-${index} cursor-pointer flex items-center justify-center hover:scale-110`}
             >
               <img src={src} alt={`Logo ${index}`} className="rounded-md" />
             </div>

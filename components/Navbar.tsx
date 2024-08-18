@@ -67,14 +67,9 @@ function Header() {
         initial="hidden"
         animate="visible"
         variants={slideInFromTop}
-        className="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md"
+        className="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md custom-cursor-auto"
       >
-        <nav className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center mr-2">
-              <span className="text-white text-xl font-bold">N</span>
-            </div>
-          </div>
+        <nav className="max-w-6xl mx-auto px-4 py-6 flex justify-center items-center">
           {!isResumePage &&
             (isMobile ? (
               <button
@@ -93,7 +88,7 @@ function Header() {
                 {navItems.map((item) => (
                   <li key={item.id}>
                     <button
-                      className={`text-gray-200 hover:text-white focus:outline-none transition-colors duration-200 ${
+                      className={`custom-cursor-pointer text-gray-200 hover:text-white focus:outline-none transition-colors duration-200 ${
                         activeSection === item.id
                           ? "border-b-2 border-cyan-500"
                           : ""

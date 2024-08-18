@@ -22,7 +22,7 @@ function Resume() {
       </h1>
       <div>
         <button
-          className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 bg-white"
+          className="custom-cursor-pointer group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 bg-white"
           onClick={handleDownloadClick}
         >
           <span className="absolute -start-full transition-all group-hover:start-4">

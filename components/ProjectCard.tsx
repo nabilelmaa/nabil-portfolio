@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="mt-12">
           <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-            <Badge variant="outline">
+            <Badge variant="outline" className="custom-cursor-pointer">
               <Image
                 src="/globe.svg"
                 alt="globe"

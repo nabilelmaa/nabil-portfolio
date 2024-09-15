@@ -61,7 +61,7 @@ const Projects = () => {
             "Prisma",
             "PostgreSQL",
           ]}
-          websiteLink="https://rahioui-cars.vercel.app/"
+          websiteLink="https://rahioui-cars.vercel.app/en"
         />
       </div>
     </motion.div>

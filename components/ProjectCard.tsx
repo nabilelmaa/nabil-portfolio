@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 interface ProjectCardProps {
@@ -16,6 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techStack,
   websiteLink,
 }) => {
+  const { resolvedTheme } = useTheme();
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden w-full md:w-1/3">
       <div className="relative w-full h-64">
@@ -31,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h2 className="text-xl mb-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           {title}
         </h2>
-        <p className="text-white font-medium text-base">{description}</p>
+        <p className="dark:text-white font-medium text-base">{description}</p>
         <div className="flex flex-wrap gap-2 mt-4">
           {techStack.map((tech, index) => (
             <Badge key={index} variant="secondary">
@@ -43,13 +45,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <a href={websiteLink} target="_blank" rel="noopener noreferrer">
             <Badge variant="outline" className="custom-cursor-pointer">
               <Image
-                src="/globe.svg"
+                src={
+                  resolvedTheme === "dark"
+                    ? "/globe-light.svg"
+                    : "/globe-dark.svg"
+                }
                 alt="globe"
                 width={20}
                 height={20}
                 className="mr-2"
               />
-              <span className="text-white">Website</span>
+              <span className="dark:text-white">Website</span>
             </Badge>
           </a>
         </div>

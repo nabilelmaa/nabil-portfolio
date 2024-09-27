@@ -12,10 +12,10 @@ const Projects = () => {
       <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">
         My Projects
       </h1>
-      <p className="text-center text-xl font-semibold text-white">
+      <p className="text-center text-xl font-semibold dark:text-white">
         Check out my work
       </p>
-      <p className="px-10 text-gray-300 py-10">
+      <p className="px-10 dark:text-gray-300 py-10">
         I've worked on a variety of projects, from simple websites to complex
         web applications. Here are a few of my favorites.
       </p>

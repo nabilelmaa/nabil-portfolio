@@ -3,8 +3,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { useTheme } from "next-themes"; 
 
 function Skills() {
+  const { theme } = useTheme(); 
+
   const logos = [
     "/node-js.png",
     "/express.png",
@@ -18,12 +21,12 @@ function Skills() {
     "/docker.png",
     "/prisma.png",
     "/git.png",
-    "/github.png",
+    theme === "dark" ? "/github-light.png" : "/github-dark.png", 
     "/java.png",
     "/spring.png",
     "/python.png",
     "/c.png",
-    "/figma1.png"
+    "/figma1.png",
   ];
 
   useEffect(() => {
@@ -43,7 +46,7 @@ function Skills() {
         `+=${index * 0.0}`
       );
     });
-  }, []);
+  }, [logos]);
 
   return (
     <section id="skills">

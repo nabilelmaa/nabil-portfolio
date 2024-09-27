@@ -4,7 +4,7 @@ import HeroContent from "./HeroContent";
 function Hero() {
   return (
     <section id="about-me">
-      <div className="flex flex-col space-y-8 mt-20">
+      <div className="flex flex-col space-y-2">
         <HeroContent />
       </div>
     </section>

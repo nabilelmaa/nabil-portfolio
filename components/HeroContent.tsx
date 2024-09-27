@@ -11,9 +11,9 @@ const HeroContent = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-16 lg:px-20 w-full z-20"
+        className="flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 md:px-16 lg:px-20 w-full z-20 mt-20 lg:mt-0"
       >
-        <div className="flex flex-col gap-6 mt-6 text-center md:text-left text-white max-w-[600px] w-full">
+        <div className="flex flex-col gap-6 mt-6 text-center md:text-left dark:text-white max-w-[600px] w-full">
           <motion.div
             variants={slideInFromLeft(0.8)}
             className="text-4xl sm:text-5xl lg:text-6xl font-semibold"
@@ -28,7 +28,7 @@ const HeroContent = () => {
           </motion.div>
           <motion.p
             variants={slideInFromLeft(0.8)}
-            className="text-base sm:text-lg lg:text-xl text-gray-400"
+            className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-200 "
           >
             I'm a Full Stack Software Engineer with experience in Web, Mobile,
             and Software development. Check out my projects and skills.

@@ -6,7 +6,7 @@ import { FindMe } from "@/components/FindMe";
 
 export default function Home() {
   return (
-    <main className="lg:p-24 custom-cursor-auto ">
+    <main className="lg:px-24 custom-cursor-auto ">
       <Hero />
       <Skills />
       <Projects />

@@ -145,7 +145,7 @@ function Header() {
             animate={{ y: "25%" }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed inset-x-0 bottom-0 z-40 dark:bg-gray-900 bg-gray-100 bg-opacity-95 backdrop-blur-md rounded-t-3xl md:hidden"
+            className="fixed inset-x-0 bottom-0 z-40 dark:bg-gray-900 bg-opacity-95 backdrop-blur-md rounded-t-3xl md:hidden"
           >
             <nav className="max-w-4xl mx-auto px-4 py-8">
               <ul className="space-y-4">

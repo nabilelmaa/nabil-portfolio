@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           src={imageSrc}
           alt={title}
           fill
-          className="object-contain"
+          className="object-contain shadow-"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

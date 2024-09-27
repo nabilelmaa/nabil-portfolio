@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 interface ProjectCardProps {
-  videoSrc: string;
+  imageSrc: string;
   title: string;
   description: string;
   techStack: string[];
@@ -11,7 +11,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  videoSrc,
+  imageSrc,
   title,
   description,
   techStack,
@@ -22,11 +22,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="border rounded-lg shadow-lg overflow-hidden w-full md:w-1/3">
       <div className="relative w-full h-64">
         <Image
-          src={videoSrc}
+          src={imageSrc}
           alt={title}
-          width={3792}
-          height={1869}
-          className="w-full h-full object-cover"
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="p-4">

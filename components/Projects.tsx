@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center py-10 px-4 sm:py-16"
+      className="flex flex-col items-center justify-center py-10 sm:py-16"
       id="projects"
     >
       <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">

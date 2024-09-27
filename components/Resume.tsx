@@ -2,6 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation";
 
+
 function Resume() {
   const router = useRouter();
   const pathname = usePathname();
@@ -11,6 +12,7 @@ function Resume() {
   const handleDownloadClick = () => {
     router.push("/resume");
   };
+
 
   return (
     <section

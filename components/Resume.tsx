@@ -1,21 +1,20 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function Resume() {
-  const pathname = usePathname();
-
-  const isResumePage = pathname === "/resume";
+  const router = useRouter();
 
   const handleDownloadClick = () => {
-    
-    const resumeUrl = '/RESUME.pdf';
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.setAttribute('download', 'Nabil_Resume.pdf'); 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    router.push("/resume");
+
+    // const resumeUrl = '/RESUME.pdf';
+    // const link = document.createElement('a');
+    // link.href = resumeUrl;
+    // link.setAttribute('download', 'Nabil_Resume.pdf');
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
   };
 
   return (

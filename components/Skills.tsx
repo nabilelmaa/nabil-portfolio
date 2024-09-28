@@ -50,7 +50,7 @@ function Skills() {
 
   return (
     <section id="skills">
-      <div className="flex flex-col items-center justify-center py-10 px-4 sm:py-16">
+      <div className="flex flex-col items-center justify-center py- px-4">
         <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
           My Skills
         </h1>

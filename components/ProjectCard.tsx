@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h2 className="text-xl mb-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           {title}
         </h2>
-        <p className="dark:text-white font-medium text-base">{description}</p>
+        <p className="dark:text-white lg:text-base text-sm">{description}</p>
         <div className="flex flex-wrap gap-2 mt-4">
           {techStack.map((tech, index) => (
             <Badge key={index} variant="secondary">

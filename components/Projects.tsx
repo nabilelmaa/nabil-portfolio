@@ -15,7 +15,7 @@ const Projects = () => {
       <p className="text-center text-xl font-semibold dark:text-white">
         Check out my work
       </p>
-      <p className="px-10 dark:text-gray-300 py-10">
+      <p className="px-10 dark:text-gray-300 py-10 text-center">
         I've worked on a variety of projects, from simple websites to complex
         web applications. Here are a few of my favorites.
       </p>

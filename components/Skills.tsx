@@ -3,29 +3,29 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { useTheme } from "next-themes"; 
+import { useTheme } from "next-themes";
 
 function Skills() {
-  const { theme } = useTheme(); 
+  const { theme } = useTheme();
 
   const logos = [
-    "/node-js.png",
-    "/express.png",
     "/js.png",
     "/ts.png",
     "/react.png",
     "/next.png",
     "/tailwind.png",
+    "/node-js.png",
+    "/express.png",
     "/postger.png",
     "/mongo.png",
-    "/docker.png",
     "/prisma.png",
-    "/git.png",
-    theme === "dark" ? "/github-light.png" : "/github-dark.png", 
     "/java.png",
     "/spring.png",
+    "/cpp.png",
     "/python.png",
-    "/c.png",
+    "/docker.png",
+    "/git.png",
+    theme === "dark" ? "/github-light.png" : "/github-dark.png",
     "/figma.png",
   ];
 

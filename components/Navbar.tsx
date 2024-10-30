@@ -5,7 +5,7 @@ import { slideInFromTop } from "@/utils/motion";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes"; // Import useTheme for theme switching
+import { useTheme } from "next-themes";
 
 const navItems = [
   { id: "about-me", label: "About me" },
@@ -122,7 +122,7 @@ function Header() {
                 {navItems.map((item) => (
                   <li key={item.id}>
                     <button
-                      className={`custom-cursor-pointer light:text-gray-200 hover:bg-red-200 dark:hover:text-white hover:text-gray-400 focus:outline-none transition-colors duration-200 ${
+                      className={`custom-cursor-pointer light:text-gray-200 hover:text-gray-400 focus:outline-none transition-colors duration-200 ${
                         activeSection === item.id
                           ? "border-b-2 border-cyan-500"
                           : ""

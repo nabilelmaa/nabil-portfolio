@@ -51,17 +51,22 @@ const Projects = () => {
           websiteLink="https://ifranex.vercel.app/en/admin/dashboard"
         />
         <ProjectCard
-          imageSrc="/project3.png"
-          title="Car rental app"
-          description="Rahioui is a user-friendly platform designed for seamless car booking experiences. Users can browse through a variety of available vehicles, filter by preferences such as type and price, and easily make bookings. "
+          imageSrc="/capture.png"
+          title="Collabease"
+          description="Collabease is a collaborative task management application designed to streamline teamwork and enhance productivity. It enables users to create and
+                       manage tasks, track progress, and communicate effectively within teams. With features such as user authentication, real-time notifications, and role based access. Collabease facilitates efficient project management."
           techStack={[
-            "Next.js",
+            "React.js",
+            "Vite",
             "Typescript",
             "Tailwind CSS",
-            "Prisma",
+            "Shadcn UI",
+            "Sping Boot",
+            "Data JPA",
             "PostgreSQL",
+            "Websockets",
           ]}
-          websiteLink="https://rahioui-cars.vercel.app/en"
+          websiteLink=""
         />
       </div>
     </motion.div>

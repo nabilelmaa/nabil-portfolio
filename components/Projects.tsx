@@ -51,7 +51,7 @@ const Projects = () => {
           websiteLink="https://ifranex.vercel.app/en/admin/dashboard"
         />
         <ProjectCard
-          imageSrc="/capture.png"
+          imageSrc="/Capture.png"
           title="Collabease"
           description="Collabease is a collaborative task management application designed to streamline teamwork and enhance productivity. It enables users to create and
                        manage tasks, track progress, and communicate effectively within teams. With features such as user authentication, real-time notifications, and role based access. Collabease facilitates efficient project management."

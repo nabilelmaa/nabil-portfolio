@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { useTheme } from "next-themes";
 
 function Skills() {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const logos = [
     "/js.png",
@@ -25,9 +30,11 @@ function Skills() {
     "/python.png",
     "/docker.png",
     "/git.png",
-    theme === "dark" ? "/github-light.png" : "/github-dark.png",
+    ...(mounted
+      ? [resolvedTheme === "dark" ? "/github-light.png" : "/github-dark.png"]
+      : []),
     "/figma.png",
-  ];
+  ].filter(Boolean);
 
   useEffect(() => {
     gsap.registerPlugin(MotionPathPlugin);
@@ -47,6 +54,8 @@ function Skills() {
       );
     });
   }, [logos]);
+
+  if (!mounted) return null;
 
   return (
     <section id="skills">

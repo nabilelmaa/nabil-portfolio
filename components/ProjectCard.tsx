@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -18,6 +19,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   websiteLink,
 }) => {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden w-full md:w-1/3">
       <div className="relative w-full h-64">
@@ -44,17 +51,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="mt-12">
           <a href={websiteLink} target="_blank" rel="noopener noreferrer">
             <Badge variant="outline" className="custom-cursor-pointer">
-              <Image
-                src={
-                  resolvedTheme === "dark"
-                    ? "/globe-light.svg"
-                    : "/globe-dark.svg"
-                }
-                alt="globe"
-                width={20}
-                height={20}
-                className="mr-2"
-              />
+              {mounted && (
+                <Image
+                  src={
+                    resolvedTheme === "dark"
+                      ? "/globe-light.svg"
+                      : "/globe-dark.svg"
+                  }
+                  alt="globe"
+                  width={20}
+                  height={20}
+                  className="mr-2"
+                />
+              )}
               <span className="dark:text-white">Website</span>
             </Badge>
           </a>
